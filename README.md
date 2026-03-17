@@ -58,5 +58,5 @@ Para evitar conflitos de merge e facilitar o trabalho em equipe, a estrutura do 
 ## Equipe de Desenvolvimento
 - **[Nikolas Lopes da Silva](https://github.com/NikolasLS-IENH)** - *Layout Base e Módulo 1*
 - **[Jonathan Ruan Barros Acedero](https://github.com/jonathanacedero)** - *UI/UX (Cores/Tipografia) e Módulo 2*
-- **[Guilherme Mayer Pinto](https://github.com/guilhermepinto)** - *Estilização de Código e Módulo 3*
+- **[Guilherme Mayer Pinto](https://github.com/Guilherme-Mayer)** - *Estilização de Código e Módulo 3*
 - **[Vinicius Daniel Góis Ferreira](https://github.com/vinidferreira)** - *Responsividade/Mobile e Módulo 4*
