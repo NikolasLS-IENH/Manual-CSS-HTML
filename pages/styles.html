@@ -1,13 +1,308 @@
-<!-- (Módulo 3) -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Módulo 3 — Estilo e Tipografia</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Estilo e Tipografia</h1>
+        <p>
+          Estilo e tipografia são os elementos responsáveis por transformar
+          páginas simples em interfaces visuais organizadas, atraentes e fáceis
+          de ler. Com CSS, é possível definir cores, fontes, espaçamentos,
+          bordas e efeitos visuais que melhoram a experiência do usuário e dão
+          identidade ao site. Esses recursos permitem controlar desde pequenos
+          detalhes do texto até a aparência completa dos elementos na página.
+        </p>
+      </header>
+
+      <nav aria-label="Sumário" class="sumario">
+        <h2>Sumário</h2>
+        <ul>
+          <li><a href="#cores">Cores</a></li>
+          <li><a href="#tipografia">Tipografia</a></li>
+          <li><a href="#espacamento">Espaçamento</a></li>
+          <li><a href="#bordas">Bordas</a></li>
+          <li><a href="#sombras">Sombras</a></li>
+        </ul>
+      </nav>
+
+      <br>
+
+      <section id="cores">
+        <h1>Cores</h1>
+
+        <br>
+
+        <article>
+          <h2>Definir cor do texto</h2>
+          <p>Altera a cor das palavras.</p>
+          <pre><code>color: white;</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Definir cor de fundo</h2>
+          <p>Muda a cor do fundo do elemento.</p>
+          <pre><code>background-color: blue;</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Cor em formato hexadecimal</h2>
+          <p>Define a cor usando valores hexadecimais.</p>
+          <pre><code>color: #ffffff;</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Cor usando valores RGB</h2>
+          <p>Define a cor usando valores RGB.</p>
+          <pre><code>color: rgb(255, 255, 0);</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Cor com transparência (RGBA)</h2>
+          <p>Define a cor com nível de opacidade.</p>
+          <pre><code>color: rgba(255, 255, 0, 0.5);</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Cor em formato HSL</h2>
+          <p>Define a cor usando matiz, saturação e luminosidade.</p>
+          <pre><code>color: hsl(60, 100%, 50%);</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Fundo com gradiente</h2>
+          <p>Cria transição suave entre cores.</p>
+          <pre><code>background: linear-gradient(to right, black, purple);</code></pre>
+        </article>
+      </section>
+
+      <br>
+
+      <section id="tipografia">
+        <h1>Tipografia</h1>
+
+        <br>
+
+        <article>
+          <h2>Definir fonte do texto</h2>
+          <p>Altera a família tipográfica.</p>
+          <pre><code>font-family: Arial, sans-serif;</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Tamanho da fonte</h2>
+          <p>Controla o tamanho do texto.</p>
+          <pre><code>font-size: 16px;</code></pre>
+        </article>
+
+        <br>
+
+        <article>
+          <h2>Texto em negrito</h2>
+          <p>Deixa o texto com maior espessura.</p>
+          <pre><code>font-weight: bold;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Texto em itálico</h2>
+          <p>Inclina o texto.</p>
+          <pre><code>font-style: italic;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Transformar letras</h2>
+          <p>Altera a forma como as letras são exibidas.</p>
+          <pre><code>text-transform: uppercase;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Decoração do texto</h2>
+          <p>Adiciona decorações ao texto.</p>
+          <pre><code>text-decoration: underline;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Alinhamento do texto</h2>
+          <p>Controla o alinhamento horizontal do texto.</p>
+          <pre><code>text-align: center;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Espaçamento entre letras</h2>
+          <p>Controla o espaçamento entre caracteres.</p>
+          <pre><code>letter-spacing: 2px;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Espaçamento entre linhas</h2>
+          <p>Controla o espaçamento vertical do texto.</p>
+          <pre><code>line-height: 1.5;</code></pre>
+        </article>
+      </section>
+
+      <br />
+
+      <section id="espacamento">
+        <h1>Espaçamento</h1>
+
+        <br />
+
+        <article>
+          <h2>Margem externa</h2>
+          <p>Controla o espaço ao redor do elemento.</p>
+          <pre><code>margin: 10px;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Margem por lado</h2>
+          <p>Controla a margem individualmente em cada lado.</p>
+          <pre><code>
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 10px;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Espaçamento interno</h2>
+          <p>Controla o espaço dentro do elemento.</p>
+          <pre><code>padding: 10px;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Padding por lado</h2>
+          <p>Controla o espaçamento interno individualmente.</p>
+          <pre><code>
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+            </code></pre>
+        </article>
+      </section>
+
+      <br />
+
+      <section id="bordas">
+        <h1>Bordas</h1>
+
+        <br />
+
+        <article>
+          <h2>Largura da borda</h2>
+          <p>Controla a espessura da borda.</p>
+          <pre><code>border-width: 2px;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Estilo da borda</h2>
+          <p>Define o estilo visual da linha.</p>
+          <pre><code>border-style: solid;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Cor da borda</h2>
+          <p>Controla a cor da borda.</p>
+          <pre><code>border-color: red;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Borda completa (atalho)</h2>
+          <p>Define largura, estilo e cor em uma única declaração.</p>
+          <pre><code>border: 2px solid red;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Cantos arredondados</h2>
+          <p>Define o arredondamento dos cantos.</p>
+          <pre><code>border-radius: 10px;</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Forma circular</h2>
+          <p>Transforma o elemento em círculo.</p>
+          <pre><code>border-radius: 50%;</code></pre>
+        </article>
+      </section>
+
+      <br />
+
+      <section id="sombras">
+        <h1>Sombras</h1>
+
+        <br />
+
+        <article>
+          <h2>Sombra em elementos</h2>
+          <p>Adiciona profundidade ao elemento.</p>
+          <pre><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Sombra no texto</h2>
+          <p>Adiciona sombra às letras.</p>
+          <pre><code>text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
+        </article>
+
+        <br />
+
+        <article>
+          <h2>Múltiplas sombras</h2>
+          <p>Permite aplicar mais de uma sombra.</p>
+          <pre><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+           -2px -2px 5px rgba(0, 0, 0, 0.3);</code></pre>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
