@@ -14,12 +14,31 @@
     <h1 id="titulo principal">📘 Módulo 2 — Interação e Formulários (HTML/CSS)</h1>
     <h2 id="titulo2">Manual de implementação</h2>
 
+    <div id="sumario">
+        <h3>Sumário</h3>
+        <ul>
+            <li><a href="#obj">1. Objetivos</a></li>
+            <li><a href="#Estrutura_base">2. Estrutura base (OBRIGATÓRIO)</a></li>
+            <li><a href="#Label">3. Por que usar &lt;label&gt;?</a></li>
+            <li><a href="#tipos_input">4. Tipos de &lt;input&gt; (com explicação)</a></li>
+            <li><a href="#select">5. Select (lista suspensa)</a></li>
+            <li><a href="#textarea">6. Textarea (texto longo)</a></li>
+            <li><a href="#botoes">7. Botões</a></li>
+            <li><a href="#validacoes">8. Validações nativas (SEM JavaScript)</a></li>
+            <li><a href="#feedback_css">9. Feedback visual com CSS</a></li>
+            <li><a href="#padrao_visual">10. Padrão visual recomendado</a></li>
+            <li><a href="#erros_comuns">11. Erros comuns (evite isso)</a></li>
+            <li><a href="#boas_praticas">12. Boas práticas</a></li>
+            <li><a href="#exemplo_completo">13. Exemplo completo explicado</a></li>
+        </ul>
+    </div>
+    <hr>
+
     <P>Este guia define o padrão oficial de formulários do projeto. <br>
         Todos os formulários devem seguir estas regras para manter consistência, acessibilidade e validação
         adequada.</P>
-    <hr>
-    <div class="obj">
-        <h3>Objetivos</h3>
+    <div id="obj">
+        <h3>1. Objetivos</h3>
         <p>Padronizar</p>
         <ul>
             <li>Estrutura de formulários</li>
@@ -30,21 +49,240 @@
     </div>
     <hr>
     <div id="Estrutura_base">
-        <h3>Estrutura base <b>(OBRIGATÓRIO)</b></h3>
+        <h3>2. Estrutura base <b>(OBRIGATÓRIO)</b></h3>
         <p>Todos os formulários devem seguir essa estrutura</p>
         <pre>
             <code>
-                <form class="form">
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                            <input id="nome" type="text" required>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
+&lt;form class="form"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="nome"&gt;Nome&lt;/label&gt;
+        &lt;input id="nome" type="text" required&gt;
+    &lt;/div&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+            </code>
+        </pre>
+        <h4>Entendendo cada elemento</h4>
+        <ul>
+            <li><code>&lt;form&gt;</code>: Contêiner principal do formulário.</li>
+            <li><code>.form-group</code>: Agrupa um campo e seu rótulo para melhor organização.</li>
+            <li><code>&lt;label&gt;</code>: Rótulo descritivo para o campo, associado via atributo <code>for</code>.
+            </li>
+            <li><code>&lt;input&gt;</code>: Campo de entrada de dados, com tipo e validação definidos.</li>
+            <li><code>&lt;button&gt;</code>: Botão para enviar o formulário.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="Label">
+        <h3>3. Por que usar &lt;label&gt;?</h3>
+        <p>O label significa "rótulo".</p>
+        <p>Os rótulos são importantes para acessibilidade e usabilidade. Eles:</p>
+        <ul>
+            <li>Facilitam a navegação por teclado.</li>
+            <li>Oferecem contexto aos usuários sobre o que o campo espera.</li>
+            <li>Permitem a seleção de campos ao clicar no rótulo.</li>
+        </ul>
+        <pre>
+            <code>
+&lt;label for="nome"&gt;Nome&lt;/label&gt;
+&lt;input id="nome" type="text" required&gt;
             </code>
         </pre>
     </div>
+    <div id="tipos_input">
+        <h3>4. Tipos de &lt;input&gt; (com explicação)</h3>
+        <p>O elemento <code>&lt;input&gt;</code> muda de comportamento de acordo com o atributo <code>type</code>. Use o
+            tipo certo para cada dado.</p>
 
+        <h4>🔤 Texto (<code>text</code>)</h4>
+        <pre><code>&lt;input type="text" placeholder="Seu nome"&gt;</code></pre>
+        <p>Usado para:</p>
+        <ul>
+            <li>Nome</li>
+            <li>Cidade</li>
+            <li>Qualquer texto curto</li>
+        </ul>
+
+        <h4>📧 Email (<code>email</code>)</h4>
+        <pre><code>&lt;input type="email" required&gt;</code></pre>
+        <p>O que acontece:</p>
+        <ul>
+            <li>O navegador valida automaticamente o formato.</li>
+            <li>Exige <code>@</code> e domínio válido.</li>
+        </ul>
+
+        <h4>🔒 Senha (<code>password</code>)</h4>
+        <pre><code>&lt;input type="password" minlength="6"&gt;</code></pre>
+        <p>O que acontece:</p>
+        <ul>
+            <li>Os caracteres são escondidos.</li>
+            <li>Pode exigir tamanho mínimo.</li>
+        </ul>
+
+        <h4>🔢 Número (<code>number</code>)</h4>
+        <pre><code>&lt;input type="number" min="0" max="10"&gt;</code></pre>
+        <p>Ideal para:</p>
+        <ul>
+            <li>Idade</li>
+            <li>Quantidade</li>
+        </ul>
+
+        <h4>🔘 Rádio (<code>radio</code>)</h4>
+        <pre><code>&lt;input type="radio" name="plano" value="basic"&gt; Básico
+&lt;input type="radio" name="plano" value="pro"&gt; Pro</code></pre>
+        <p>Importante:</p>
+        <ul>
+            <li>Mesmo <code>name</code> → apenas uma escolha é permitida.</li>
+        </ul>
+
+        <h4>☑️ Checkbox (<code>checkbox</code>)</h4>
+        <pre><code>&lt;input type="checkbox"&gt; Aceito os termos</code></pre>
+        <p>Permite:</p>
+        <ul>
+            <li>Múltiplas seleções (vários checkboxes juntos).</li>
+            <li>Confirmações (ex.: aceite de termos).</li>
+        </ul>
+
+        <h3 id="select">5. Select (lista suspensa)</h3>
+        <pre>
+            <code>
+&lt;select required&gt;
+&lt;option value=""&gt;Selecione&lt;/option&gt;
+&lt;option value="1"&gt;Opção 1&lt;/option&gt;
+&lt;/select&gt;
+            </code>
+        </pre>
+        <p>Use quando:</p>
+        <ul>
+            <li>Existem várias opções.</li>
+            <li>Quer economizar espaço na tela.</li>
+        </ul>
+
+        <h3 id="textarea">6. Textarea (texto longo)</h3>
+        <pre><code>&lt;textarea rows="4" placeholder="Mensagem"&gt;&lt;/textarea&gt;</code></pre>
+        <p>Ideal para:</p>
+        <ul>
+            <li>Comentários</li>
+            <li>Mensagens</li>
+            <li>Descrições</li>
+        </ul>
+
+        <h3 id="botoes">7. Botões</h3>
+        <pre><code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;button type="reset"&gt;Limpar&lt;/button&gt;</code></pre>
+        <p>Tipos:</p>
+        <ul>
+            <li><strong>submit</strong> - envia o formulário.</li>
+            <li><strong>reset</strong> - limpa os campos.</li>
+            <li><strong>button</strong> - ação customizada via JavaScript.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="validacoes">
+        <h3>8. Validações nativas (SEM JavaScript)</h3>
+        <p>O HTML já valida automaticamente vários campos. Use essas validações para melhorar a experiência do usuário.
+        </p>
+
+        <h4>Campo obrigatório</h4>
+        <pre><code>&lt;input required&gt;</code></pre>
+
+        <h4>Tamanho mínimo</h4>
+        <pre><code>&lt;input minlength="3"&gt;</code></pre>
+
+        <h4>Intervalo numérico</h4>
+        <pre><code>&lt;input type="number" min="1" max="100"&gt;</code></pre>
+
+        <h4>Padrão (regex)</h4>
+        <pre><code>&lt;input pattern="[A-Za-z]{3,}"&gt;</code></pre>
+        <p>Exemplo: Só aceita letras, mínimo 3 caracteres.</p>
+    </div>
+    <hr>
+    <div id="feedback_css">
+        <h3>9. Feedback visual com CSS</h3>
+        <p>Aqui está o diferencial: o usuário vê imediatamente se está certo ou errado.</p>
+
+        <h4>Estados de validação</h4>
+        <pre><code>.input:valid {
+  border: 2px solid green;
+}
+
+.input:invalid {
+  border: 2px solid red;
+}</code></pre>
+
+        <h4>Campo em foco</h4>
+        <pre><code>.input:focus {
+  border-color: blue;
+  outline: none;
+}</code></pre>
+
+        <p>Por que isso é importante?</p>
+        <ul>
+            <li>✔ O usuário entende erros rapidamente.</li>
+            <li>✔ Reduz envio incorreto.</li>
+            <li>✔ Melhora a experiência.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="padrao_visual">
+        <h3>10. Padrão visual recomendado</h3>
+        <pre><code>.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}</code></pre>
+    </div>
+    <hr>
+    <div id="erros_comuns">
+        <h3>11. Erros comuns (evite isso)</h3>
+        <ul>
+            <li>❌ Não usar <code>&lt;label&gt;</code>.</li>
+            <li>❌ Usar só <code>placeholder</code>.</li>
+            <li>❌ Não validar campos.</li>
+            <li>❌ Inputs sem padrão visual.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="boas_praticas">
+        <h3>12. Boas práticas</h3>
+        <ul>
+            <li>✔ Sempre use <code>&lt;label&gt;</code>.</li>
+            <li>✔ Use validação nativa antes de JavaScript.</li>
+            <li>✔ Dê feedback visual.</li>
+            <li>✔ Mantenha padrão de classes.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="exemplo_completo">
+        <h3>13. Exemplo completo explicado</h3>
+        <pre><code>&lt;form class="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input class="input" id="email" type="email" required&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form-group"&gt;
+    &lt;label for="senha"&gt;Senha&lt;/label&gt;
+    &lt;input class="input" id="senha" type="password" minlength="6" required&gt;
+  &lt;/div&gt;
+
+  &lt;button type="submit"&gt;Entrar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        <p>O que está correto aqui:</p>
+        <ul>
+            <li>Campos com <code>&lt;label&gt;</code>.</li>
+            <li>Validação nativa ativa.</li>
+            <li>Estrutura organizada.</li>
+            <li>Pronto para estilização.</li>
+        </ul>
+    </div>
+    <hr>
 
 </body>
 
