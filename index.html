@@ -1,12 +1,73 @@
-<!-- (Capa/Menu principal) -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <title>WebGuides</title>
 </head>
 <body>
-    
+    <header class="navbar">
+        <div class="logo"> 
+            <span class="logo-icon">W</span> WebGuides
+        </div>
+    </header>
+    <div class="layout-container">  
+        <aside class="sidebar-left">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html" class="active">Introdução</a></li>
+                <li><a href="pages/semantics.html">Estrutura e Semântica</a></li>
+                <li><a href="pages/forms.html">Interação e Formulários</a></li>
+                <li><a href="pages/styles.html">Estilo e Tipografia</a></li>
+                <li><a href="pages/layouts.html">Layouts e Posicionamento</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Bem-vindo ao WebGuides</h1>
+            <p>Uma documentação visual, prática e colaborativa sobre os fundamentos do desenvolvimento web, construída do zero sem o uso de frameworks.</p>
+            
+            <div style="margin: 1.5rem 0; display: flex; gap: 10px;">
+                <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+            </div>
+            
+            <h2 id="sobre-o-projeto"># Sobre o Projeto</h2>
+            <p>Nosso grande desafio técnico e objetivo central foi replicar uma interface moderna e responsiva utilizando <strong>exclusivamente as linguagens base da web (HTML5 e CSS3)</strong>, sem nenhuma linha de JavaScript, inspirando-se no design da documentação oficial do Vue.js.</p>
+            
+            <blockquote style="border-left: 4px solid var(--accent-color); padding-left: 1rem; margin: 1.5rem 0; background: var(--bg-code); padding: 1rem; border-radius: 4px;">
+                <p style="margin: 0;"><strong>Contexto Acadêmico:</strong> Este manual interativo foi desenvolvido como requisito para a disciplina de <strong>Introdução ao Desenvolvimento Front-End</strong>, ministrada pela professora <strong>Eduarda Velho</strong>, no curso de <strong>Análise e Desenvolvimento de Sistemas</strong> da instituição <strong>IENH</strong>.</p>
+            </blockquote>
+            
+            <h2 id="equipe"># Equipe de Desenvolvimento</h2>
+            <p>O manual foi construído de forma colaborativa por nossa equipe de desenvolvedores:</p>
+            
+            <ul style="margin-top: 1rem; line-height: 1.8; list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 1rem;">
+                    <strong>Nikolas Lopes da Silva</strong> <br> 
+                    <span>↳ Layout Base e Módulo 1</span>
+                </li>
+                <li style="margin-bottom: 1rem;">
+                    <strong>Jonathan Ruan Barros Acedero</strong> <br> 
+                    <span">↳ UI/UX (Cores/Tipografia) e Módulo 2</span>
+                </li>
+                <li style="margin-bottom: 1rem;">
+                    <strong>Guilherme Mayer Pinto</strong> <br> 
+                    <span>↳ Estilização de Código e Módulo 3</span>
+                </li>
+                <li style="margin-bottom: 1rem;">
+                    <strong>Vinicius Daniel Góis Ferreira</strong> <br> 
+                    <span>↳ Responsividade/Mobile e Módulo 4</span>
+                </li>
+            </ul>
+        </main>
+        <aside class="sidebar-right">
+            <h3>Nesta Página</h3>
+            <ul>
+                <li><a href="#sobre-o-projeto">Sobre o Projeto</a></li>
+                <li><a href="#equipe">Equipe de Desenvolvimento</a></li>
+            </ul>
+        </aside>
+    </div>
 </body>
 </html>

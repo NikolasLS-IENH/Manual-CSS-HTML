@@ -1,1 +1,169 @@
 /* (Variáveis, reset, tipografia e layout base) */
+
+/* --- Cores para o Código --- */
+.code-block {
+    background-color: #1e1e1e;              
+    color: #d4d4d4;           
+    border-left: 4px solid var(--accent-color);
+}
+
+/* Classes para cada tipo de elemento no código */
+.token.tag { color: #569cd6; }     
+.token.attr { color: #9cdcfe; }      
+.token.string { color: #ce9178; }   
+.token.comment { color: #6a9955; font-style: italic; }
+.token.content { color: #d4d4d4; }   
+
+.code-block pre {
+    margin: 0;
+    font-family: inherit;
+    white-space: pre-wrap;      
+    word-wrap: break-word;    
+}
+
+/* --- Variáveis de Cor (Dark Mode inspirado no Vue) --- */
+:root{
+    --bg-color: #1a1a1a;                     /* Fundo escuro padrão */
+    --bg-header: #242424;                    /* Fundo do cabeçalho */
+    --bg-code: #2f2f2f;                      /* Fundo dos blocos de código */
+    --text-main: #ffffff;                    /* Texto principal */
+    --text-muted: #rgba(255,255,255,0.7);      /* Texto secundário */
+    --accent-color: #008cff;                 /* Verde do Vue para destaques/links */
+    --border-color: #383838;                 /* Bordas sutis */
+    --header-height: 60px;                     /* Variáveis de layout */
+}      
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Cabeçalho (Navbar) --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    height: var(--header-height);
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+/* --- Grid de Layout da Documentação --- */
+.layout-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - var(--header-height));
+}
+
+/* --- Estilos Comuns para as Sidebars --- */
+.sidebar-left,.sidebar-right {
+    padding: 2rem 1.5rem;
+    position: sticky;
+    top: var(--header-height);
+    height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+}
+
+.sidebar-left {
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar-right {
+    font-size: 0.85rem;
+}
+
+.sidebar-left h3, .sidebar-right h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-left ul, .sidebar-right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.sidebar-left a.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* --- Conteúdo Principal --- */
+.content {
+    padding: 3rem 4rem;
+    max-width: 900px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.code-block {
+    background-color: var(--bg-code);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    font-family: monospace;
+    color: #e6e6e6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content h2, 
+.content h3 {
+    scroll-margin-top: calc(var(--header-height)); 
+}
