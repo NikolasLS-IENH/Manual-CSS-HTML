@@ -1,308 +1,297 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Módulo 3 — Estilo e Tipografia</title>
-  </head>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">W</span> WebGuides
+        </div>
+    </header>
+    <div class="layout-container">
+        <aside class="sidebar-left">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="../index.html">Introdução</a></li>
+                <li><a href="semantics.html">Estrutura e Semântica</a></li>
+                <li><a href="forms.html">Interação e Formulários</a></li>
+                <li><a href="styles.html" class="active">Estilo e Tipografia</a></li>
+                <li><a href="layouts.html">Layouts e Posicionamento</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Estilo e Tipografia</h1>
+            <p>Estilo e tipografia são os elementos responsáveis por transformar páginas simples em interfaces visuais organizadas, atraentes e fáceis de ler. Com CSS, é possível definir cores, fontes, espaçamentos, bordas e efeitos visuais que melhoram a experiência do usuário e dão identidade ao site. Esses recursos permitem controlar desde pequenos detalhes do texto até a aparência completa dos elementos na página.</p>
 
-  <body>
-    <main>
-      <header>
-        <h1>Estilo e Tipografia</h1>
-        <p>
-          Estilo e tipografia são os elementos responsáveis por transformar
-          páginas simples em interfaces visuais organizadas, atraentes e fáceis
-          de ler. Com CSS, é possível definir cores, fontes, espaçamentos,
-          bordas e efeitos visuais que melhoram a experiência do usuário e dão
-          identidade ao site. Esses recursos permitem controlar desde pequenos
-          detalhes do texto até a aparência completa dos elementos na página.
-        </p>
-      </header>
+            <h2 id="cores">Cores</h2>
+            <p>Explicações sobre cores em CSS.</p>
 
-      <nav aria-label="Sumário" class="sumario">
-        <h2>Sumário</h2>
-        <ul>
-          <li><a href="#cores">Cores</a></li>
-          <li><a href="#tipografia">Tipografia</a></li>
-          <li><a href="#espacamento">Espaçamento</a></li>
-          <li><a href="#bordas">Bordas</a></li>
-          <li><a href="#sombras">Sombras</a></li>
-        </ul>
-      </nav>
+            <article>
+                <h3>Definir cor do texto</h3>
+                <p>Altera a cor das palavras.</p>
+                <div class="code-block">
+<pre><code>color: white;</code></pre>
+                </div>
+            </article>
 
-      <br>
+            <article>
+                <h3>Definir cor de fundo</h3>
+                <p>Muda a cor do fundo do elemento.</p>
+                <div class="code-block">
+<pre><code>background-color: blue;</code></pre>
+                </div>
+            </article>
 
-      <section id="cores">
-        <h1>Cores</h1>
+            <article>
+                <h3>Cor em formato hexadecimal</h3>
+                <p>Define a cor usando valores hexadecimais.</p>
+                <div class="code-block">
+<pre><code>color: #ffffff;</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <article>
+                <h3>Cor usando valores RGB</h3>
+                <p>Define a cor usando valores RGB.</p>
+                <div class="code-block">
+<pre><code>color: rgb(255, 255, 0);</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Definir cor do texto</h2>
-          <p>Altera a cor das palavras.</p>
-          <pre><code>color: white;</code></pre>
-        </article>
+            <article>
+                <h3>Cor com transparência (RGBA)</h3>
+                <p>Define a cor com nível de opacidade.</p>
+                <div class="code-block">
+<pre><code>color: rgba(255, 255, 0, 0.5);</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <article>
+                <h3>Cor em formato HSL</h3>
+                <p>Define a cor usando matiz, saturação e luminosidade.</p>
+                <div class="code-block">
+<pre><code>color: hsl(60, 100%, 50%);</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Definir cor de fundo</h2>
-          <p>Muda a cor do fundo do elemento.</p>
-          <pre><code>background-color: blue;</code></pre>
-        </article>
+            <article>
+                <h3>Fundo com gradiente</h3>
+                <p>Cria transição suave entre cores.</p>
+                <div class="code-block">
+<pre><code>background: linear-gradient(to right, black, purple);</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <h2 id="tipografia">Tipografia</h2>
+            <p>Explicações sobre tipografia em CSS.</p>
 
-        <article>
-          <h2>Cor em formato hexadecimal</h2>
-          <p>Define a cor usando valores hexadecimais.</p>
-          <pre><code>color: #ffffff;</code></pre>
-        </article>
+            <article>
+                <h3>Definir fonte do texto</h3>
+                <p>Altera a família tipográfica.</p>
+                <div class="code-block">
+<pre><code>font-family: Arial, sans-serif;</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <article>
+                <h3>Tamanho da fonte</h3>
+                <p>Controla o tamanho do texto.</p>
+                <div class="code-block">
+<pre><code>font-size: 16px;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Cor usando valores RGB</h2>
-          <p>Define a cor usando valores RGB.</p>
-          <pre><code>color: rgb(255, 255, 0);</code></pre>
-        </article>
+            <article>
+                <h3>Texto em negrito</h3>
+                <p>Deixa o texto com maior espessura.</p>
+                <div class="code-block">
+<pre><code>font-weight: bold;</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <article>
+                <h3>Texto em itálico</h3>
+                <p>Inclina o texto.</p>
+                <div class="code-block">
+<pre><code>font-style: italic;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Cor com transparência (RGBA)</h2>
-          <p>Define a cor com nível de opacidade.</p>
-          <pre><code>color: rgba(255, 255, 0, 0.5);</code></pre>
-        </article>
+            <article>
+                <h3>Transformar letras</h3>
+                <p>Altera a forma como as letras são exibidas.</p>
+                <div class="code-block">
+<pre><code>text-transform: uppercase;</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <article>
+                <h3>Decoração do texto</h3>
+                <p>Adiciona decorações ao texto.</p>
+                <div class="code-block">
+<pre><code>text-decoration: underline;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Cor em formato HSL</h2>
-          <p>Define a cor usando matiz, saturação e luminosidade.</p>
-          <pre><code>color: hsl(60, 100%, 50%);</code></pre>
-        </article>
+            <article>
+                <h3>Alinhamento do texto</h3>
+                <p>Controla o alinhamento horizontal do texto.</p>
+                <div class="code-block">
+<pre><code>text-align: center;</code></pre>
+                </div>
+            </article>
 
-        <br>
+            <article>
+                <h3>Espaçamento entre letras</h3>
+                <p>Controla o espaçamento entre caracteres.</p>
+                <div class="code-block">
+<pre><code>letter-spacing: 2px;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Fundo com gradiente</h2>
-          <p>Cria transição suave entre cores.</p>
-          <pre><code>background: linear-gradient(to right, black, purple);</code></pre>
-        </article>
-      </section>
+            <article>
+                <h3>Espaçamento entre linhas</h3>
+                <p>Controla o espaçamento vertical do texto.</p>
+                <div class="code-block">
+<pre><code>line-height: 1.5;</code></pre>
+                </div>
+            </article>
 
-      <br>
+            <h2 id="espacamento">Espaçamento</h2>
+            <p>Explicações sobre espaçamento em CSS.</p>
 
-      <section id="tipografia">
-        <h1>Tipografia</h1>
+            <article>
+                <h3>Margem externa</h3>
+                <p>Controla o espaço ao redor do elemento.</p>
+                <div class="code-block">
+<pre><code>margin: 10px;</code></pre>
+                </div>
+            </article>
 
-        <br>
-
-        <article>
-          <h2>Definir fonte do texto</h2>
-          <p>Altera a família tipográfica.</p>
-          <pre><code>font-family: Arial, sans-serif;</code></pre>
-        </article>
-
-        <br>
-
-        <article>
-          <h2>Tamanho da fonte</h2>
-          <p>Controla o tamanho do texto.</p>
-          <pre><code>font-size: 16px;</code></pre>
-        </article>
-
-        <br>
-
-        <article>
-          <h2>Texto em negrito</h2>
-          <p>Deixa o texto com maior espessura.</p>
-          <pre><code>font-weight: bold;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Texto em itálico</h2>
-          <p>Inclina o texto.</p>
-          <pre><code>font-style: italic;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Transformar letras</h2>
-          <p>Altera a forma como as letras são exibidas.</p>
-          <pre><code>text-transform: uppercase;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Decoração do texto</h2>
-          <p>Adiciona decorações ao texto.</p>
-          <pre><code>text-decoration: underline;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Alinhamento do texto</h2>
-          <p>Controla o alinhamento horizontal do texto.</p>
-          <pre><code>text-align: center;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Espaçamento entre letras</h2>
-          <p>Controla o espaçamento entre caracteres.</p>
-          <pre><code>letter-spacing: 2px;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Espaçamento entre linhas</h2>
-          <p>Controla o espaçamento vertical do texto.</p>
-          <pre><code>line-height: 1.5;</code></pre>
-        </article>
-      </section>
-
-      <br />
-
-      <section id="espacamento">
-        <h1>Espaçamento</h1>
-
-        <br />
-
-        <article>
-          <h2>Margem externa</h2>
-          <p>Controla o espaço ao redor do elemento.</p>
-          <pre><code>margin: 10px;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Margem por lado</h2>
-          <p>Controla a margem individualmente em cada lado.</p>
-          <pre><code>
-margin-top: 10px;
+            <article>
+                <h3>Margem por lado</h3>
+                <p>Controla a margem individualmente em cada lado.</p>
+                <div class="code-block">
+<pre><code>margin-top: 10px;
 margin-right: 10px;
 margin-bottom: 10px;
 margin-left: 10px;</code></pre>
-        </article>
+                </div>
+            </article>
 
-        <br />
+            <article>
+                <h3>Espaçamento interno</h3>
+                <p>Controla o espaço dentro do elemento.</p>
+                <div class="code-block">
+<pre><code>padding: 10px;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Espaçamento interno</h2>
-          <p>Controla o espaço dentro do elemento.</p>
-          <pre><code>padding: 10px;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Padding por lado</h2>
-          <p>Controla o espaçamento interno individualmente.</p>
-          <pre><code>
-padding-top: 10px;
+            <article>
+                <h3>Padding por lado</h3>
+                <p>Controla o espaçamento interno individualmente.</p>
+                <div class="code-block">
+<pre><code>padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 10px;
-padding-left: 10px;
-            </code></pre>
-        </article>
-      </section>
+padding-left: 10px;</code></pre>
+                </div>
+            </article>
 
-      <br />
+            <h2 id="bordas">Bordas</h2>
+            <p>Explicações sobre bordas em CSS.</p>
 
-      <section id="bordas">
-        <h1>Bordas</h1>
+            <article>
+                <h3>Largura da borda</h3>
+                <p>Controla a espessura da borda.</p>
+                <div class="code-block">
+<pre><code>border-width: 2px;</code></pre>
+                </div>
+            </article>
 
-        <br />
+            <article>
+                <h3>Estilo da borda</h3>
+                <p>Define o estilo visual da linha.</p>
+                <div class="code-block">
+<pre><code>border-style: solid;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Largura da borda</h2>
-          <p>Controla a espessura da borda.</p>
-          <pre><code>border-width: 2px;</code></pre>
-        </article>
+            <article>
+                <h3>Cor da borda</h3>
+                <p>Controla a cor da borda.</p>
+                <div class="code-block">
+<pre><code>border-color: red;</code></pre>
+                </div>
+            </article>
 
-        <br />
+            <article>
+                <h3>Borda completa (atalho)</h3>
+                <p>Define largura, estilo e cor em uma única declaração.</p>
+                <div class="code-block">
+<pre><code>border: 2px solid red;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Estilo da borda</h2>
-          <p>Define o estilo visual da linha.</p>
-          <pre><code>border-style: solid;</code></pre>
-        </article>
+            <article>
+                <h3>Cantos arredondados</h3>
+                <p>Define o arredondamento dos cantos.</p>
+                <div class="code-block">
+<pre><code>border-radius: 10px;</code></pre>
+                </div>
+            </article>
 
-        <br />
+            <article>
+                <h3>Forma circular</h3>
+                <p>Transforma o elemento em círculo.</p>
+                <div class="code-block">
+<pre><code>border-radius: 50%;</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Cor da borda</h2>
-          <p>Controla a cor da borda.</p>
-          <pre><code>border-color: red;</code></pre>
-        </article>
+            <h2 id="sombras">Sombras</h2>
+            <p>Explicações sobre sombras em CSS.</p>
 
-        <br />
+            <article>
+                <h3>Sombra em elementos</h3>
+                <p>Adiciona profundidade ao elemento.</p>
+                <div class="code-block">
+<pre><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
+                </div>
+            </article>
 
-        <article>
-          <h2>Borda completa (atalho)</h2>
-          <p>Define largura, estilo e cor em uma única declaração.</p>
-          <pre><code>border: 2px solid red;</code></pre>
-        </article>
+            <article>
+                <h3>Sombra no texto</h3>
+                <p>Adiciona sombra às letras.</p>
+                <div class="code-block">
+<pre><code>text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
+                </div>
+            </article>
 
-        <br />
-
-        <article>
-          <h2>Cantos arredondados</h2>
-          <p>Define o arredondamento dos cantos.</p>
-          <pre><code>border-radius: 10px;</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Forma circular</h2>
-          <p>Transforma o elemento em círculo.</p>
-          <pre><code>border-radius: 50%;</code></pre>
-        </article>
-      </section>
-
-      <br />
-
-      <section id="sombras">
-        <h1>Sombras</h1>
-
-        <br />
-
-        <article>
-          <h2>Sombra em elementos</h2>
-          <p>Adiciona profundidade ao elemento.</p>
-          <pre><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Sombra no texto</h2>
-          <p>Adiciona sombra às letras.</p>
-          <pre><code>text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
-        </article>
-
-        <br />
-
-        <article>
-          <h2>Múltiplas sombras</h2>
-          <p>Permite aplicar mais de uma sombra.</p>
-          <pre><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
-           -2px -2px 5px rgba(0, 0, 0, 0.3);</code></pre>
-        </article>
-      </section>
-    </main>
-  </body>
+            <article>
+                <h3>Múltiplas sombras</h3>
+                <p>Permite aplicar mais de uma sombra.</p>
+                <div class="code-block">
+<pre><code>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+ -2px -2px 5px rgba(0, 0, 0, 0.3);</code></pre>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar-right">
+            <h3>Nesta Página</h3>
+            <ul>
+                <li><a href="#cores">Cores</a></li>
+                <li><a href="#tipografia">Tipografia</a></li>
+                <li><a href="#espacamento">Espaçamento</a></li>
+                <li><a href="#bordas">Bordas</a></li>
+                <li><a href="#sombras">Sombras</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
 </html>
