@@ -1,13 +1,108 @@
-<!-- (Módulo 1) -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/semantics.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <title>WebGuides</title>
 </head>
 <body>
-    
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">W</span> WebGuides
+        </div>
+    </header>
+    <div class="layout-container">
+        <aside class="sidebar-left">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="../index.html">Introdução</a></li>
+                <li><a href="semantics.html" class="active">Estrutura e Semântica</a></li>
+                <li><a href="forms.html">Interação e Formulários</a></li>
+                <li><a href="styles.html">Estilo e Tipografia</a></li>
+                <li><a href="layouts.html">Layouts e Posicionamento</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Estrutura e Semântica</h1>
+            <p>O HTML semântico dá significado ao conteúdo da página. Em vez de focar apenas no visual, ele foca no propósito da informação, o que é vital para a acessibilidade e para os motores de busca (SEO).</p>
+
+            <h2 id="estrutura-basica"># A Estrutura Básica (Boilerplate)</h2>
+            <p>Toda página web precisa de uma estrutura inicial. O <code>&lt;head&gt;</code> guarda as configurações ocultas, enquanto o <code>&lt;body&gt;</code> contém o que o usuário realmente vê.</p>
+
+            <div class="code-block">
+<pre><code><span class="token comment">&lt;!-- Declaração do tipo de documento para HTML5 --&gt;</span>
+<span class="token tag">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag">&lt;html</span> <span class="token attr">lang</span>=<span class="token string">"pt-BR"</span><span class="token tag">&gt;</span>
+<span class="token tag">&lt;head&gt;</span>
+    <span class="token tag">&lt;meta</span> <span class="token attr">charset</span>=<span class="token string">"UTF-8"</span><span class="token tag">&gt;</span>
+    <span class="token tag">&lt;meta</span> <span class="token attr">name</span>=<span class="token string">"viewport"</span> <span class="token attr">content</span>=<span class="token string">"width=device-width, initial-scale=1.0"</span><span class="token tag">&gt;</span>
+    <span class="token tag">&lt;title&gt;</span><span class="token content">Minha Primeira Página</span><span class="token tag">&lt;/title&gt;</span>
+<span class="token tag">&lt;/head&gt;</span>
+<span class="token tag">&lt;body&gt;</span>
+    <span class="token comment">&lt;!-- O conteúdo visível vai aqui --&gt;</span>
+<span class="token tag">&lt;/body&gt;</span>
+<span class="token tag">&lt;/html&gt;</span></code></pre>
+            </div>
+
+            <h2 id="construindo-layout"># Construindo o Layout com Semântica</h2>
+            <p>Esqueça a época em que os sites eram feitos apenas com milhares de <code>&lt;div&gt;</code>. Hoje, nós dividimos a página em regiões com significados claros.</p>
+
+            <div class="code-block">
+<pre><code><span class="token tag">&lt;body&gt;</span>
+    <span class="token comment">&lt;!-- Cabeçalho principal do site --&gt;</span>
+    <span class="token tag">&lt;header&gt;</span>
+        <span class="token tag">&lt;h1&gt;</span><span class="token content">Meu Blog Tech</span><span class="token tag">&lt;/h1&gt;</span>
+        <span class="token tag">&lt;nav&gt;</span>
+            <span class="token comment">&lt;!-- Links de navegação --&gt;</span>
+        <span class="token tag">&lt;/nav&gt;</span>
+    <span class="token tag">&lt;/header&gt;</span>
+
+    <span class="token comment">&lt;!-- O conteúdo principal e exclusivo da página --&gt;</span>
+    <span class="token tag">&lt;main&gt;</span>
+        <span class="token tag">&lt;article&gt;</span>
+            <span class="token tag">&lt;h2&gt;</span><span class="token content">Como usar CSS Grid</span><span class="token tag">&lt;/h2&gt;</span>
+            <span class="token tag">&lt;p&gt;</span><span class="token content">Um guia completo sobre layouts bidimensionais...</span><span class="token tag">&lt;/p&gt;</span>
+        <span class="token tag">&lt;/article&gt;</span>
+    <span class="token tag">&lt;/main&gt;</span>
+
+    <span class="token comment">&lt;!-- Rodapé --&gt;</span>
+    <span class="token tag">&lt;footer&gt;</span>
+        <span class="token tag">&lt;p&gt;</span><span class="token content">© 2023 Meu Blog Tech. Todos os direitos reservados.</span><span class="token tag">&lt;/p&gt;</span>
+    <span class="token tag">&lt;/footer&gt;</span>
+<span class="token tag">&lt;/body&gt;</span></code></pre>
+            </div>
+
+            <h2 id="textos-titulos"># Textos, Títulos e Ênfase</h2>
+            <p>A hierarquia de títulos (do h1 ao h6) é crucial. Use <code>&lt;strong&gt;</code> para palavras de forte importância (normalmente renderizado em negrito) e <code>&lt;em&gt;</code> para ênfase (renderizado em itálico).</p>
+
+            <div class="code-block">
+<pre><code><span class="token tag">&lt;h2&gt;</span><span class="token content">Linguagens Front-end</span><span class="token tag">&lt;/h2&gt;</span>
+<span class="token tag">&lt;p&gt;</span>
+    <span class="token content">O </span><span class="token tag">&lt;strong&gt;</span><span class="token content">HTML</span><span class="token tag">&lt;/strong&gt;</span><span class="token content"> constrói a estrutura, o </span><span class="token tag">&lt;strong&gt;</span><span class="token content">CSS</span><span class="token tag">&lt;/strong&gt;</span><span class="token content"> cuida do design, e o </span><span class="token tag">&lt;em&gt;</span><span class="token content">JavaScript</span><span class="token tag">&lt;/em&gt;</span><span class="token content"> adiciona interatividade.</span>
+<span class="token tag">&lt;/p&gt;</span></code></pre>
+            </div>
+
+            <h2 id="navegacao-listas"># Navegação e Listas</h2>
+            <p>Para criar links que levam a outras páginas, usamos a tag âncora <code>&lt;a&gt;</code>. Para agrupar itens em tópicos, usamos listas.</p>
+
+            <div class="code-block">
+<pre><code><span class="token comment">&lt;!-- Uma lista não ordenada contendo links --&gt;</span>
+<span class="token tag">&lt;ul&gt;</span>
+    <span class="token tag">&lt;li&gt;</span><span class="token tag">&lt;a</span> <span class="token attr">href</span>=<span class="token string">"https://developer.mozilla.org"</span> <span class="token attr">target</span>=<span class="token string">"_blank"</span><span class="token tag">&gt;</span><span class="token content">MDN Web Docs</span><span class="token tag">&lt;/a&gt;</span><span class="token tag">&lt;/li&gt;</span>
+    <span class="token tag">&lt;li&gt;</span><span class="token tag">&lt;a</span> <span class="token attr">href</span>=<span class="token string">"contato.html"</span><span class="token tag">&gt;</span><span class="token content">Fale Conosco</span><span class="token tag">&lt;/a&gt;</span><span class="token tag">&lt;/li&gt;</span>
+<span class="token tag">&lt;/ul&gt;</span></code></pre>
+            </div>
+        </main>
+        <aside class="sidebar-right">
+            <h3>Nesta Página</h3>
+            <ul>
+                <li><a href="#estrutura-basica">A Estrutura Básica</a></li>
+                <li><a href="#construindo-layout">Construindo o Layout</a></li>
+                <li><a href="#textos-titulos">Textos, Títulos e Ênfase</a></li>
+                <li><a href="#navegacao-listas">Navegação e Listas</a></li>
+            </ul>
+        </aside>
+    </div>
 </body>
 </html>
