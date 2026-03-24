@@ -13,7 +13,7 @@
         <header id="header">
             <nav id="navbar">
                 <div id="navbar-title">
-                    <a href="../index.html">📘 Manual CSS HTML</a>
+                    <a href="../index.html">Manual CSS HTML</a>
                 </div>
                 <ul id="navbar-menu">
                     <li><a href="../pages/forms.html">Formulários</a></li>
@@ -26,7 +26,7 @@
 
         <!-- Container Principal -->
         <div id="container">
-            <!-- Sidebar Navigation -->
+            <!-- Sidebar -->
             <aside id="sidebar">
                 <nav id="sidebar-nav">
                     <div id="sidebar-title">
@@ -53,7 +53,7 @@
                 </nav>
             </aside>
 
-            <!-- Main Content -->
+            <!-- conteudo principal -->
             <main id="main-content">
                 <!-- Header do conteúdo -->
                 <article id="article-content">
@@ -66,7 +66,7 @@
                                 visual.</small></p>
                     </div>
 
-                    <!-- Seção: Introdução -->
+                    <!-- Introdução -->
                     <section id="introducao">
                         <h2>Introdução</h2>
                         <p>Formulários são um dos componentes mais fundamentais e vitais da web. Eles permitem que
@@ -86,7 +86,7 @@
 
                     <hr>
 
-                    <!-- Seção: Objetivos -->
+                    <!-- Objetivos -->
                     <section id="objetivos">
                         <h2>Objetivos</h2>
                         <p>Este guia estabelece os pilares para que todos os formulários do projeto sejam consistentes,
@@ -108,7 +108,7 @@
 
                     <hr>
 
-                    <!-- Seção: O que são formulários -->
+                    <!-- O que são formulários -->
                     <section id="o-que-sao">
                         <h2>O que são formulários?</h2>
                         <p>Um formulário HTML é um conjunto de campos que coleta dados do usuário e os envia para o
@@ -145,7 +145,7 @@
 
                     <hr>
 
-                    <!-- Seção: Estrutura-base -->
+                    <!-- Estrutura-base -->
                     <section id="estrutura-base">
                         <h2>Estrutura base <em>(OBRIGATÓRIO)</em></h2>
                         <p>Todo formulário deve ter uma estrutura clara e previsível. Isso ajuda navegadores, leitores
@@ -196,7 +196,7 @@
 
                     <hr>
 
-                    <!-- Seção: Por que usar label -->
+                    <!-- Por que usar label -->
                     <section id="por-que-label">
                         <h2>Por que usar <code>&lt;label&gt;</code>?</h2>
                         <p>O label significa "rótulo". Labels são frequentemente negligenciados e substituídos apenas
@@ -214,12 +214,12 @@
                         </ul>
 
                         <h3>Comparação: Sem vs. Com label</h3>
-                        <p><strong>❌ Sem label (apenas placeholder):</strong></p>
+                        <p><strong> Sem label (apenas placeholder):</strong></p>
                         <pre><code>&lt;input type="email" placeholder="seu@email.com"&gt;</code></pre>
                         <p><small><strong>Problemas:</strong> Usuários com leitores de tela ouvem só "campo de texto".
                                 Placeholder desaparece ao digitar. Sem dica sobre o campo.</small></p>
 
-                        <p><strong>✅ Com label (recomendado):</strong></p>
+                        <p><strong> Com label (recomendado):</strong></p>
                         <pre><code>&lt;label for="email"&gt;Email&lt;/label&gt;
 &lt;input id="email" type="email" placeholder="seu@email.com"&gt;</code></pre>
                         <p><small><strong>Vantagens:</strong> Claro para todos. Leitor de tela anuncia "Email, campo de
@@ -234,7 +234,7 @@
 
                     <hr>
 
-                    <!-- Seção: Tipos de input -->
+                    <!--  Tipos de input -->
                     <section id="tipos-input">
                         <h2>Tipos de <code>&lt;input&gt;</code></h2>
                         <p>O elemento <code>&lt;input&gt;</code> muda de comportamento de acordo com o atributo
@@ -293,7 +293,7 @@
 
                     <hr>
 
-                    <!-- Seção: Select -->
+                    <!-- Select -->
                     <section id="select">
                         <h2>Select <em>(lista suspensa)</em></h2>
                         <p>Use <code>&lt;select&gt;</code> quando há muitas opções e espaço limitado na tela. É mais
@@ -322,7 +322,7 @@
 
                     <hr>
 
-                    <!-- Seção: Textarea -->
+                    <!-- Textarea -->
                     <section id="textarea">
                         <h2>Textarea <em>(texto longo)</em></h2>
                         <p>Para texto longo com múltiplas linhas use <code>&lt;textarea&gt;</code>, nunca
@@ -353,7 +353,7 @@
 
                     <hr>
 
-                    <!-- Seção: Botões -->
+                    <!-- Botões -->
                     <section id="botoes">
                         <h2>Botões</h2>
                         <p>Existem três tipos de botões em formulários, cada um com um propósito diferente e
@@ -369,7 +369,7 @@
                         <h3>type="reset" — Limpar (raro)</h3>
                         <pre><code>&lt;button type="reset"&gt;Limpar&lt;/button&gt;</code></pre>
                         <p><strong>O que faz:</strong> Reseta todos os campos aos valores iniciais. Raramente útil.</p>
-                        <p><strong>⚠️ Aviso:</strong> Confunde usuários. Se um usuário clica acidentalmente, perde todo
+                        <p><strong> Aviso:</strong> Confunde usuários. Se um usuário clica acidentalmente, perde todo
                             seu trabalho. Não recomendado.</p>
 
                         <h3>type="button" — Ação customizada</h3>
@@ -386,7 +386,7 @@
 
                     <hr>
 
-                    <!-- Seção: Validações -->
+                    <!-- Validações -->
                     <section id="validacoes">
                         <h2>Validações nativas <em>(SEM JavaScript!)</em></h2>
                         <p>HTML5 oferece validação <strong>automática</strong> no navegador. Você não precisa escrever
@@ -431,14 +431,14 @@
                         </ol>
 
                         <blockquote>
-                            <p><strong>⚠️ Importante:</strong> Validação no navegador é apenas para UX. Sempre valide no
+                            <p><strong>Importante:</strong> Validação no navegador é apenas para UX. Sempre valide no
                                 servidor também — um usuário poderia hackear DevTools e contornar validação!</p>
                         </blockquote>
                     </section>
 
                     <hr>
 
-                    <!-- Seção: Feedback visual -->
+                    <!-- Feedback visual -->
                     <section id="feedback-css">
                         <h2>Feedback visual com CSS</h2>
                         <p>CSS oferece pseudo-classes para estilizar campos baseado em seu estado de validação. Isso
@@ -468,13 +468,13 @@
                         <p>Mostra qual campo o usuário está preenchendo. <strong>Essential para acessibilidade</strong>
                             — usuários que navegam apenas por teclado precisam saber qual campo está ativo.</p>
 
-                        <h3>⚠️ Cuidado: :invalid em tempo real</h3>
+                        <h3>Cuidado: :invalid em tempo real</h3>
                         <p>Por padrão, <code>:invalid</code> ativa assim que o campo é inválido, mesmo enquanto o
                             usuário ainda está digitando. Isso é frustrante:</p>
-                        <pre><code>/* ❌ Ruim: mostra erro enquanto digitando */
+                        <pre><code>/* Ruim: mostra erro enquanto digitando */
 input:invalid { border: 2px solid red; }
 
-/* ✅ Melhor: mostra erro apenas após sair do campo */
+/* Melhor: mostra erro apenas após sair do campo */
 input:invalid:not(:focus) { border: 2px solid red; }</code></pre>
 
                         <h3>Exemplo completo recomendado:</h3>
@@ -507,16 +507,16 @@ textarea:invalid:not(:focus) {
 
                         <h4>Por que feedback visual importa:</h4>
                         <ul>
-                            <li>✅ Usuário entende erros imediatamente, sem esperar envio</li>
-                            <li>✅ Reduz taxa de reenvio incorreto</li>
-                            <li>✅ Melhora confiança e satisfação do usuário</li>
-                            <li>✅ Acessível para usuários com deficiências visuais (com cores + ícones/texto)</li>
+                            <li>Usuário entende erros imediatamente, sem esperar envio</li>
+                            <li>Reduz taxa de reenvio incorreto</li>
+                            <li>Melhora confiança e satisfação do usuário</li>
+                            <li>Acessível para usuários com deficiências visuais (com cores + ícones/texto)</li>
                         </ul>
                     </section>
 
                     <hr>
 
-                    <!-- Seção: Padrão visual -->
+                    <!-- Padrão visual -->
                     <section id="padrao-visual">
                         <h2>Padrão visual recomendado</h2>
                         <p>Aqui estão padrões CSS recomendados para estruturar formulários de forma consistente e
@@ -595,46 +595,46 @@ select {
 
                     <hr>
 
-                    <!-- Seção: Erros comuns -->
+                    <!-- Erros comuns -->
                     <section id="erros-comuns">
                         <h2>Erros comuns <em>(evite isso)</em></h2>
                         <p>Aqui estão os erros mais frequentes que degradam acessibilidade, validação e experiência do
                             usuário:</p>
 
-                        <h3>❌ Não usar &lt;label&gt;</h3>
+                        <h3>Não usar &lt;label&gt;</h3>
                         <p><strong>Problema:</strong> Usuários cegos com leitores de tela não sabem qual é o campo. Área
                             clicável muito pequena.</p>
 
-                        <h3>❌ Usar apenas placeholder como rótulo</h3>
+                        <h3>Usar apenas placeholder como rótulo</h3>
                         <p><strong>Problema:</strong> Placeholder desaparece ao digitar. Usuário perde contexto. Não
                             passa em validação de acessibilidade.</p>
 
-                        <h3>❌ Usar &lt;div&gt; com onclick para "submit"</h3>
+                        <h3>Usar &lt;div&gt; com onclick para "submit"</h3>
                         <p><strong>Problema:</strong> Quebra validação automática do navegador. Não funciona ao
                             pressionar Enter. Falha em acessibilidade (tabindex, roles).</p>
 
-                        <h3>❌ Usar type="button" quando deveria ser type="submit"</h3>
+                        <h3>Usar type="button" quando deveria ser type="submit"</h3>
                         <p><strong>Problema:</strong> Evita ativação de validação automática. Usuário pensa que nada
                             aconteceu.</p>
 
-                        <h3>❌ Usar type="text" para tudo</h3>
+                        <h3>Usar type="text" para tudo</h3>
                         <p><strong>Problema:</strong> Navegadores não conseguem oferecer teclados especializados em
                             mobile. Experiência degradada.</p>
 
-                        <h3>❌ Remover :focus outline apenas para "deixar bonito"</h3>
+                        <h3>Remover :focus outline apenas para "deixar bonito"</h3>
                         <p><strong>Problema:</strong> Usuários que navegam apenas por teclado não conseguem saber qual
                             campo está ativo. Falha crítica em acessibilidade. Sempre substitua com
                             <code>box-shadow</code> ou <code>border-color</code>.
                         </p>
 
-                        <h3>❌ Confiar apenas em validação do navegador</h3>
+                        <h3>Confiar apenas em validação do navegador</h3>
                         <p><strong>Problema:</strong> Um usuário poderia abrir DevTools e hackear a validação. Sempre
                             valide os dados no servidor também.</p>
                     </section>
 
                     <hr>
 
-                    <!-- Seção: Boas práticas -->
+                    <!-- Boas práticas -->
                     <section id="boas-praticas">
                         <h2>Boas práticas</h2>
                         <p>Siga estas recomendações para criar formulários de alta qualidade, acessíveis e fáceis de
@@ -642,51 +642,51 @@ select {
 
                         <h3>HTML e estrutura:</h3>
                         <ul>
-                            <li>✅ Sempre use <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code> e
+                            <li>Sempre use <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code> e
                                 <code>&lt;button type="submit"&gt;</code>
                             </li>
-                            <li>✅ Use o tipo de input correto (email, number, date, etc.) — não type="text" para tudo
+                            <li>Use o tipo de input correto (email, number, date, etc.) — não type="text" para tudo
                             </li>
-                            <li>✅ Vinculação correta: <code>for</code> em label com <code>id</code> em input</li>
-                            <li>✅ Use <code>required</code> para campos obrigatórios</li>
+                            <li>Vinculação correta: <code>for</code> em label com <code>id</code> em input</li>
+                            <li>Use <code>required</code> para campos obrigatórios</li>
                         </ul>
 
                         <h3>Validação:</h3>
                         <ul>
-                            <li>✅ Use validações nativas do HTML (minlength, pattern, min/max, etc.)</li>
-                            <li>✅ Sempre valide no servidor também — nunca confie apenas no navegador</li>
-                            <li>✅ Forneça mensagens de erro claras e úteis</li>
+                            <li>Use validações nativas do HTML (minlength, pattern, min/max, etc.)</li>
+                            <li>Sempre valide no servidor também — nunca confie apenas no navegador</li>
+                            <li>Forneça mensagens de erro claras e úteis</li>
                         </ul>
 
                         <h3>CSS e feedback:</h3>
                         <ul>
-                            <li>✅ Dê feedback visual com :valid e :invalid (mas não em tempo real)</li>
-                            <li>✅ Mantenha :focus outline ou substitua por box-shadow/border-color</li>
-                            <li>✅ Mantenha fonte em 16px mínimo em mobile (previne zoom)</li>
-                            <li>✅ Mantenha padrões visuais consistentes em todo o projeto</li>
+                            <li>Dê feedback visual com :valid e :invalid (mas não em tempo real)</li>
+                            <li>Mantenha :focus outline ou substitua por box-shadow/border-color</li>
+                            <li>Mantenha fonte em 16px mínimo em mobile (previne zoom)</li>
+                            <li>Mantenha padrões visuais consistentes em todo o projeto</li>
                         </ul>
 
                         <h3>Acessibilidade:</h3>
                         <ul>
-                            <li>✅ Sempre use labels (essencial para leitores de tela)</li>
-                            <li>✅ Não remova :focus outline sem alternativo</li>
-                            <li>✅ Use <code>placeholder</code> como dica, não como rótulo</li>
-                            <li>✅ Teste com leitores de tela (NVDA, JAWS, VoiceOver)</li>
-                            <li>✅ Teste navegação apenas com teclado (Tab, Enter, Shift+Tab)</li>
+                            <li>Sempre use labels (essencial para leitores de tela)</li>
+                            <li>Não remova :focus outline sem alternativo</li>
+                            <li>Use <code>placeholder</code> como dica, não como rótulo</li>
+                            <li>Teste com leitores de tela (NVDA, JAWS, VoiceOver)</li>
+                            <li>Teste navegação apenas com teclado (Tab, Enter, Shift+Tab)</li>
                         </ul>
 
                         <h3>UX:</h3>
                         <ul>
-                            <li>✅ Mantenha formulários simples e focados</li>
-                            <li>✅ Agrupe campos relacionados com <code>fieldset</code></li>
-                            <li>✅ Use placeholder para exemplos, não instruções</li>
-                            <li>✅ Teste em desktop, tablet e mobile</li>
+                            <li>Mantenha formulários simples e focados</li>
+                            <li>Agrupe campos relacionados com <code>fieldset</code></li>
+                            <li>Use placeholder para exemplos, não instruções</li>
+                            <li>Teste em desktop, tablet e mobile</li>
                         </ul>
                     </section>
 
                     <hr>
 
-                    <!-- Seção: Exemplo completo -->
+                    <!-- Exemplo completo -->
                     <section id="exemplo-completo">
                         <h2>Exemplo completo explicado</h2>
                         <p>Um formulário de login real, com todas as boas práticas aplicadas. Este é o padrão que você
@@ -725,14 +725,14 @@ select {
 
                         <h3>O que está correto aqui:</h3>
                         <ul>
-                            <li>✅ <code>&lt;form&gt;</code> semântico (não div ou article)</li>
-                            <li>✅ Email com validação automática (@ obrigatório)</li>
-                            <li>✅ Password com minlength=8 (força mínima)</li>
-                            <li>✅ Checkbox com label (pode clicar no texto)</li>
-                            <li>✅ <code>type="submit"</code> (ativa validação nativa)</li>
-                            <li>✅ Todos os campos com labels acessíveis</li>
-                            <li>✅ Estrutura clara e previsível</li>
-                            <li>✅ Pronto para estilização CSS</li>
+                            <li><code>&lt;form&gt;</code> semântico (não div ou article)</li>
+                            <li>Email com validação automática (@ obrigatório)</li>
+                            <li>Password com minlength=8 (força mínima)</li>
+                            <li>Checkbox com label (pode clicar no texto)</li>
+                            <li><code>type="submit"</code> (ativa validação nativa)</li>
+                            <li>Todos os campos com labels acessíveis</li>
+                            <li>Estrutura clara e previsível</li>
+                            <li>Pronto para estilização CSS</li>
                         </ul>
 
                         <h3>O que acontece quando o usuário interage:</h3>
@@ -749,7 +749,7 @@ select {
 
                     <hr>
 
-                    <!-- Seção: Conclusão -->
+                    <!-- Conclusão -->
                     <section id="conclusao">
                         <h2>Conclusão</h2>
                         <p>Você aprendeu a criar formulários com HTML semântico, validação nativa e feedback visual em
@@ -757,12 +757,12 @@ select {
 
                         <h3>Recapitulando, com apenas HTML + CSS você consegue:</h3>
                         <ul>
-                            <li>✅ Criar formulários semanticamente corretos</li>
-                            <li>✅ Validar dados automaticamente (sem JavaScript)</li>
-                            <li>✅ Fornecer feedback visual imediato</li>
-                            <li>✅ Garantir acessibilidade para usuários com deficiências</li>
-                            <li>✅ Otimizar para mobile com teclados corretos</li>
-                            <li>✅ Melhorar significativamente a experiência do usuário</li>
+                            <li>Criar formulários semanticamente corretos</li>
+                            <li>Validar dados automaticamente (sem JavaScript)</li>
+                            <li>Fornecer feedback visual imediato</li>
+                            <li>Garantir acessibilidade para usuários com deficiências</li>
+                            <li>Otimizar para mobile com teclados corretos</li>
+                            <li>Melhorar significativamente a experiência do usuário</li>
                         </ul>
 
                         <h3>Próximos passos (opcionais):</h3>
@@ -784,7 +784,7 @@ select {
 
                     <hr>
 
-                    <!-- Footer do conteúdo -->
+
                     <div id="content-footer">
                         <p><small>Última atualização: 23 de março de 2026</small></p>
                     </div>
@@ -792,10 +792,9 @@ select {
             </main>
         </div>
 
-        <!-- Footer -->
         <footer id="footer">
             <nav id="footer-nav">
-                <p>📘 WebGuides: Manual Interativo de HTML e CSS — Módulo 2: Interação e Formulários</p>
+                <p>WebGuides: Manual Interativo de HTML e CSS — Módulo 2: Interação e Formulários</p>
                 <p><small>Desenvolvido colaborativamente por <a href="https://github.com/NikolasLS-IENH">Nikolas Lopes
                             da Silva</a>, <a href="https://github.com/jonathanacedero">Jonathan Ruan Barros Acedero</a>,
                         <a href="https://github.com/Guilherme-Mayer">Guilherme Mayer Pinto</a> e <a
