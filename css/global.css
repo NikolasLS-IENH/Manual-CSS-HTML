@@ -104,10 +104,23 @@ a:hover {
 
 .sidebar-left {
     border-right: 1px solid var(--border-color);
+    padding-left: 13px;
+    padding-right: inherit;
+    position: sticky;
+    top: var(--header-height);
+    height: var(--header-height);
 }
 
 .sidebar-right {
     font-size: 0.85rem;
+    padding-left: inherit;
+    padding-right: inherit;
+    position: sticky;
+    top: var(--header-height);
+    height: var(--header-height);
+    width:max-content;
+    border-right: 1px solid var(--border-color);
+    
 }
 
 .sidebar-left h3, .sidebar-right h3 {
