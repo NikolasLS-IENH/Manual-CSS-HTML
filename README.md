@@ -5,7 +5,7 @@
 
 > Uma documentação visual, prática e colaborativa sobre os fundamentos do desenvolvimento web, construída do zero sem o uso de frameworks.
 
-**[https://nikolasls-ienh.github.io/Manual-CSS-HTML/](#)** 
+**[https://nikolasls-ienh.github.io/Manual-CSS-HTML/]** 
 
 ## Sobre o Projeto
 Este projeto é um guia de consulta rápida focado puramente em **HTML5** e **CSS3**, construído de forma colaborativa por uma equipe de 4 desenvolvedores ao longo de um sprint de 2 semanas. O manual apresenta não apenas a teoria e a sintaxe das principais tags e propriedades, mas também renderiza exemplos visuais lado a lado com os blocos de código.
