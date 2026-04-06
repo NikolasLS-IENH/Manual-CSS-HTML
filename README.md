@@ -43,13 +43,13 @@ Para evitar conflitos de merge e facilitar o trabalho em equipe, a estrutura do 
 
     📁 webguides-manual/
     ├── 📄 index.html           (Capa/Menu principal)
+    ├── 📄 global.css           (Variáveis, reset, tipografia e layout base)
     ├── 📁 paginas/             (Páginas de conteúdo)
     │   ├── 📄 semantica.html   (Módulo 1)
     │   ├── 📄 formularios.html (Módulo 2)
     │   ├── 📄 estilos.html     (Módulo 3)
     │   └── 📄 layouts.html     (Módulo 4)
     └── 📁 css/                 (Estilos isolados)
-        ├── 📄 global.css       (Variáveis, reset, tipografia e layout base)
         ├── 📄 semantica.css    (Estilos do Módulo 1)
         ├── 📄 formularios.css  (Estilos do Módulo 2)
         ├── 📄 estilos.css      (Estilos do Módulo 3)
