@@ -18,14 +18,14 @@
 }
 
 :root{
-    --bg-color: #1a1a1a;                     /* Fundo escuro padrão */
-    --bg-header: #242424;                    /* Fundo do cabeçalho */
-    --bg-code: #2f2f2f;                      /* Fundo dos blocos de código */
-    --text-main: #ffffff;                    /* Texto principal */
-    --text-muted: #rgba(255,255,255,0.7);      /* Texto secundário */
-    --accent-color: #008cff;                 /* Verde do Vue para destaques/links */
-    --border-color: #383838;                 /* Bordas sutis */
-    --header-height: 60px;                     /* Variáveis de layout */
+    --bg-color: #1a1a1a;                    
+    --bg-header: #242424;                   
+    --bg-code: #2f2f2f;                    
+    --text-main: #ffffff;              
+    --text-muted: #rgba(255,255,255,0.7);      
+    --accent-color: #008cff;               
+    --border-color: #383838;             
+    --header-height: 60px;                    
 }      
 
 

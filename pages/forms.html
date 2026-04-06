@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../global.css">
     <title>WebGuides</title>
 </head>
-
 <body>
     <header class="navbar">
         <div class="logo">
@@ -31,8 +30,6 @@
                 de usuário excepcional, usando apenas HTML e CSS.</p>
             <p>Este guia cobre tudo que você precisa saber para implementar formulários profissionais em seu
                 projeto, desde a estrutura semântica até validações nativas e feedback visual.</p>
-
-            <!-- Introdução -->
             <section id="introducao">
                 <h2>Introdução</h2>
                 <p>Formulários são um dos componentes mais fundamentais e vitais da web. Eles permitem que
@@ -50,10 +47,6 @@
                 <br>
                 <p>JavaScript é um complemento opcional para funcionalidades avançadas — não o ponto de partida.</p>
             </section>
-
-
-
-            <!-- Objetivos -->
             <section id="objetivos">
                 <h2>Objetivos</h2>
                 <p>Este guia estabelece os pilares para que todos os formulários do projeto sejam consistentes,
@@ -72,15 +65,11 @@
                         deficiências, consigam preencher formulários</li><br>
                 </ul>
             </section>
-
-
-            <!-- O que são formulários -->
             <section id="o-que-sao">
                 <h2>O que são formulários?</h2>
                 <p>Um formulário HTML é um conjunto de campos que coleta dados do usuário e os envia para o
                     servidor. Pode ser desde um simples login até um complexo formulário de cadastro com
                     múltiplos passos.</p><br>
-
                 <h3>Componentes principais:</h3><br>
                 <ul>
                     <li><strong>&lt;form&gt;</strong> — O contêiner semântico que agrupa campos relacionados
@@ -92,7 +81,6 @@
                         acessibilidade)</li><br>
                     <li><strong>&lt;button&gt;</strong> — Acionador para submissão ou reset</li><br>
                 </ul>
-
                 <h3>O ciclo de um formulário:</h3>
                 <ol>
                     <br>
@@ -108,17 +96,12 @@
                     <br>
                     <li>Se inválido, mensagens de erro aparecem antes de enviar</li>
                 </ol>
-
                 <br>
                 <blockquote>
                     <p><strong>Ponto chave:</strong> Este guia cobre a implementação HTML/CSS. O envio dos dados
                         ao servidor requer backend (não coberto aqui).</p>
                 </blockquote>
             </section>
-
-
-
-            <!-- Estrutura-base -->
             <section id="estrutura-base">
                 <h2>Estrutura base <em>(OBRIGATÓRIO)</em></h2>
                 <p>Todo formulário deve ter uma estrutura clara e previsível. Isso ajuda navegadores, leitores
@@ -134,7 +117,6 @@
     <span class="token tag">&lt;button</span> <span class="token attr">type</span>=<span class="token string">"submit"</span><span class="token tag">&gt;</span><span class="token content">Enviar</span><span class="token tag">&lt;/button&gt;</span>
 <span class="token tag">&lt;/form&gt;</span></code></pre>
                 </div>
-
                 <h3>Por que cada elemento importa</h3>
                 <dl>
                     <br>
@@ -171,10 +153,6 @@
                         automática do navegador.</p>
                 </blockquote>
             </section>
-
-
-
-            <!-- Por que usar label -->
             <section id="por-que-label">
                 <h2>Por que usar <code>&lt;label&gt;</code>?</h2>
                 <p>O label significa "rótulo". Labels são frequentemente negligenciados e substituídos apenas
@@ -193,7 +171,6 @@
                         sempre visível.</li>
                     <br>
                 </ul>
-
                 <h3>Comparação: Sem vs. Com label</h3>
                 <p><strong> Sem label (apenas placeholder):</strong></p>
                 <div class="code-block">
@@ -202,7 +179,6 @@
                 <p><strong>Problemas:</strong> Usuários com leitores de tela ouvem só "campo de texto".
                     Placeholder desaparece ao digitar. Sem dica sobre o campo.</p>
                 <br>
-
                 <p><strong> Com label (recomendado):</strong></p>
                 <div class="code-block">
                     <pre><code><span class="token tag">&lt;label</span> <span class="token attr">for</span>=<span class="token string">"email"</span><span class="token tag">&gt;</span><span class="token content">Email</span><span class="token tag">&lt;/label&gt;</span>
@@ -217,10 +193,6 @@
                     </p>
                 </blockquote>
             </section>
-
-
-
-            <!--  Tipos de input -->
             <section id="tipos-input">
                 <h2>Tipos de <code>&lt;input&gt;</code></h2>
                 <p>O elemento <code>&lt;input&gt;</code> muda de comportamento de acordo com o atributo
@@ -237,7 +209,6 @@
                     <li>Nome</li>
                     <li>Cidade</li>
                 </ul>
-
                 <br>
                 <h3>Email <code>email</code></h3>
                 <div class="code-block">
@@ -253,13 +224,11 @@
                         <li>Os caracteres são escondidos.</li>
                         <li>Pode exigir tamanho mínimo.</li>
                     </ul>
-
                     <br>
                     <h3>Número <code>number</code></h3>
                     <div class="code-block">
                         <pre><code><span class="token tag">&lt;input</span> <span class="token attr">type</span>=<span class="token string">"number"</span> <span class="token attr">min</span>=<span class="token string">"0"</span> <span class="token attr">max</span>=<span class="token string">"10"</span><span class="token tag">&gt;</span></code></pre>
                     </div>
-
                     <br>
                     <h3>Senha <code>password</code></h3>
                     <div class="code-block">
@@ -270,13 +239,11 @@
                         <li>Os caracteres são escondidos.</li>
                         <li>Pode exigir tamanho mínimo.</li>
                     </ul>
-
                     <br>
                     <h3>Número <code>number</code></h3>
                     <div class="code-block">
                         <pre><code><span class="token tag">&lt;input</span> <span class="token attr">type</span>=<span class="token string">"number"</span> <span class="token attr">min</span>=<span class="token string">"0"</span> <span class="token attr">max</span>=<span class="token string">"10"</span><span class="token tag">&gt;</span></code></pre>
                     </div>
-
                     <br>
                     <h3>Radio <code>radio</code></h3>
                     <div class="code-block">
@@ -287,7 +254,6 @@
                     <ul>
                         <li>Mesmo <code>name</code> → apenas uma escolha é permitida.</li>
                     </ul>
-
                     <br>
                     <h3>Checkbox <code>checkbox</code></h3>
                     <div class="code-block">
@@ -299,8 +265,6 @@
                         <li>Confirmações (ex.: aceite de termos).</li>
                     </ul>
             </section>
-
-            <!-- Select -->
             <section id="select">
                 <h2>Select <em>(lista suspensa)</em></h2>
                 <p>Use <code>&lt;select&gt;</code> quando há muitas opções e espaço limitado na tela. É mais
@@ -315,36 +279,28 @@
     <span class="token tag">&lt;option</span> <span class="token attr">value</span>=<span class="token string">"us"</span><span class="token tag">&gt;</span><span class="token content">Estados Unidos</span><span class="token tag">&lt;/option&gt;</span>
 <span class="token tag">&lt;/select&gt;</span></code></pre>
                 </div>
-
                 <h3>Quando usar select:</h3>
                 <ul>
                     <li>Mais de 5 opções (se menos, use radios)</li>
                     <li>Espaço limitado na tela</li>
                     <li>Opções predefinidas (não digitáveis)</li>
                 </ul>
-
                 <br>
                 <h3>Dica importante:</h3>
                 <p>A primeira <code>&lt;option&gt;</code> com <code>value=""</code> funciona como placeholder.
                     Força o usuário a escolher explicitamente uma opção real (evita seleção acidental da
                     primeira).</p>
             </section>
-
-
-
-            <!-- Textarea -->
             <section id="textarea">
                 <h2>Textarea <em>(texto longo)</em></h2>
                 <p>Para texto longo com múltiplas linhas use <code>&lt;textarea&gt;</code>, nunca
                     <code>&lt;input type="text"&gt;</code>. Textarea permite quebras de linha e
                     redimensionamento.
                 </p>
-
                 <div class="code-block">
                     <pre><code><span class="token tag">&lt;label</span> <span class="token attr">for</span>=<span class="token string">"mensagem"</span><span class="token tag">&gt;</span><span class="token content">Sua mensagem</span><span class="token tag">&lt;/label&gt;</span>
 <span class="token tag">&lt;textarea</span> <span class="token attr">id</span>=<span class="token string">"mensagem"</span> <span class="token attr">rows</span>=<span class="token string">"5"</span> <span class="token attr">placeholder</span>=<span class="token string">"Digite aqui..."</span><span class="token tag">&gt;&lt;/textarea&gt;</span></code></pre>
                 </div>
-
                 <h3>Atributos úteis:</h3>
                 <ul>
                     <li><code>rows</code> — Altura inicial em linhas (padrão: 2)</li>
@@ -353,7 +309,6 @@
                     <li><code>maxlength</code> — Número máximo de caracteres</li>
                     <li><code>required</code> — Marca como obrigatório</li>
                 </ul>
-
                 <br>
                 <h3>Casos de uso:</h3>
                 <ul>
@@ -363,15 +318,10 @@
                     <li>Qualquer texto livre de múltiplas linhas</li>
                 </ul>
             </section>
-
-
-
-            <!-- Botões -->
             <section id="botoes">
                 <h2>Botões</h2>
                 <p>Existem três tipos de botões em formulários, cada um com um propósito diferente e
                     comportamento distinto.</p>
-
                 <br>
                 <h3>type="submit" — Enviar</h3>
                 <div class="code-block">
@@ -379,8 +329,6 @@
                 </div>
                 <p><strong>O que faz:</strong> Ativa a validação automática do navegador e dispara o evento
                     <code>submit</code>. Permite submissão ao pressionar Enter.
-
-
                     <br>
                     <br>
                 <h3>type="reset" — Limpar (raro)</h3>
@@ -389,7 +337,6 @@
                 </div>
                 <p><strong>O que faz:</strong> Reseta todos os campos aos valores iniciais. Raramente útil. O usuário
                     basicamente, perde todo seu trabalho. Não recomendado.</p>
-
                 <br>
                 <h3>type="button" — Ação customizada</h3>
                 <div class="code-block">
@@ -397,7 +344,6 @@
                 </div>
                 <p><strong>O que faz:</strong> Não submete o formulário. Requer JavaScript para funcionar. Use
                     para ações como "Cancelar", "Limpar manualmente" ou abrir modais.</p>
-
                 <br>
                 <blockquote>
                     <p><strong>Regra importante:</strong> Use <code>type="submit"</code> para enviar
@@ -405,15 +351,10 @@
                         de dados.</p>
                 </blockquote>
             </section>
-
-
-
-            <!-- Validações -->
             <section id="validacoes">
                 <h2>Validações nativas <em>(SEM JavaScript!)</em></h2>
                 <p>HTML5 oferece validação <strong>automática</strong> no navegador. Você não precisa escrever
                     uma linha de JavaScript para validação básica. O navegador faz o trabalho pesado.</p>
-
                 <br>
                 <h3>required — Campo obrigatório</h3>
                 <div class="code-block">
@@ -421,7 +362,6 @@
                 </div>
                 <p>Se o usuário tenta enviar o formulário vazio, o navegador bloqueia e mostra: "Por favor,
                     preencha este campo".</p>
-
                 <br>
                 <h3>minlength e maxlength — Comprimento de texto</h3>
                 <div class="code-block">
@@ -439,7 +379,6 @@
                 <p>Define limite mínimo e máximo. Funciona com <code>number</code>, <code>date</code>,
                     <code>range</code> e <code>time</code>.
                 </p>
-
                 <br>
                 <h3>pattern — Expressão regular (regex)</h3>
                 <div class="code-block">
@@ -478,10 +417,6 @@
                         servidor também — um usuário poderia hackear DevTools e contornar validação!</p>
                 </blockquote>
             </section>
-
-
-
-            <!-- Feedback visual -->
             <section id="feedback-css">
                 <h2>Feedback visual com CSS <em>(:valid, :invalid, :focus)</em></h2>
                 <p>CSS permite mostradores visuais imediatos sobre o estado de validação dos campos. Isso
@@ -576,9 +511,6 @@
                 </ul>
             </section>
 
-
-
-            <!-- Padrão visual -->
             <section id="padrao-visual">
                 <h2>Padrão visual recomendado</h2>
                 <p>Aqui estão padrões CSS recomendados para estruturar formulários de forma consistente e
@@ -661,7 +593,6 @@
 }</code></pre>
                 </div>
             </section>
-            <!-- Erros comuns -->
             <section id="erros-comuns">
                 <h2>Erros comuns <em>(evite isso)</em></h2>
                 <p>Aqui estão os erros mais frequentes que degradam acessibilidade, validação e experiência do
@@ -704,7 +635,6 @@
                 <p><strong>Problema:</strong> Um usuário poderia abrir DevTools e hackear a validação. Sempre
                     valide os dados no servidor também.</p>
             </section>
-            <!-- Boas práticas -->
             <section id="boas-praticas">
                 <h2>Boas práticas</h2>
                 <p>Siga estas recomendações para criar formulários de alta qualidade, acessíveis e fáceis de
@@ -768,7 +698,6 @@
                     <li>Teste em desktop, tablet e mobile</li>
                 </ul>
             </section>
-            <!-- Exemplo completo -->
             <section id="exemplo-completo">
                 <h2>Exemplo completo explicado</h2>
                 <p>Um formulário de login real, com todas as boas práticas aplicadas. Este é o padrão que você
@@ -838,7 +767,6 @@
                     <li>Navegador valida, envia ao servidor</li>
                 </ol>
             </section>
-            <!-- Conclusão -->
             <section id="conclusao">
                 <h2>Conclusão</h2>
                 <p>Você aprendeu a criar formulários com HTML semântico, validação nativa e feedback visual em
@@ -882,5 +810,4 @@
         </aside>
     </div>
 </body>
-
 </html>
